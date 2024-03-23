@@ -513,7 +513,7 @@
   max-width: 100%;
   grid-column-start: 3 !important;
   grid-column-end: -3 !important;
-  padding: 8px;
+  padding: 8px 24px;
 }
 .h1___7Y0Cj {
   width: 100%;
@@ -601,6 +601,8 @@
   max-width: 100%;
   object-fit: cover;
   position: relative;
+  width: 100%;
+  min-width: 0;
 }
 .freeBox__frCJs {
   display: flex;
@@ -716,7 +718,7 @@
 .freeBox__kc0Se {
   display: flex;
   position: relative;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
@@ -794,7 +796,6 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 8px;
 }
 .h6__cA6S5 {
   width: 100%;

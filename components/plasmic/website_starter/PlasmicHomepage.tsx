@@ -540,9 +540,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.h3___6VOy3
                               )}
                             >
-                              {
-                                "7yZp2XBhWdhig\ncEUucB7pnei5Hu\nQ9LSBrjanAG2d\nQvnR"
-                              }
+                              {"7yZp2XBhWdhigcEUucB7pn\nei5HuQ9LSBrjanAG2dQvnR"}
                             </h3>
                           </div>
                         </div>
@@ -671,7 +669,9 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.h3__fyafy
                     )}
                   >
-                    {"Meme and Build TG to 1000 user \nDextools update "}
+                    {
+                      "Unnecessary introductions, Gather the small-time IQ50s people who think they will get rich just by buying shitcoins like this."
+                    }
                   </h3>
                 </div>
                 <div className={classNames(projectcss.all, sty.column__eUdGr)}>
@@ -693,7 +693,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.h3__yNjE
                     )}
                   >
-                    {"Vibe and HODL"}
+                    {"Buy High, HODL Tight."}
                   </h3>
                 </div>
                 <div className={classNames(projectcss.all, sty.column___7L6Ng)}>
@@ -715,7 +715,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.h3___2Ju8Q
                     )}
                   >
-                    {"Utility Development"}
+                    {"Utility Development \n(Maybe)"}
                   </h3>
                 </div>
               </Stack__>
