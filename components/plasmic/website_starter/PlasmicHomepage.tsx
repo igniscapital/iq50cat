@@ -237,6 +237,10 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Button
                   className={classNames("__wab_instance", sty.button__kGyH)}
                   color={"white"}
+                  link={
+                    "https://dexscreener.com/solana/hqcw8xa3hrwcm8l9sf6qxcu3vticvs4iiybtmea2zogr"
+                  }
+                  target={true}
                 >
                   {"DEXSCREENER"}
                 </Button>
@@ -768,6 +772,9 @@ function PlasmicHomepage__RenderFunc(props: {
               <Button
                 className={classNames("__wab_instance", sty.button__y9LGu)}
                 color={"white"}
+                link={
+                  "https://dexscreener.com/solana/hqcw8xa3hrwcm8l9sf6qxcu3vticvs4iiybtmea2zogr"
+                }
               >
                 {"DEXSCREENER"}
               </Button>
