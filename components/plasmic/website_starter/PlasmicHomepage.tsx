@@ -742,7 +742,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {
-                  "\nBe part of our journey, where every move counts and every player leads. With $IQ50CAT, it's not just a game, it's a legacy."
+                  "There's nothing in here, just a bunch of IQ50s who love to buy high, hodl tight, and hope for the best."
                 }
               </h3>
             </div>
