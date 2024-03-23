@@ -84,7 +84,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
-  h5?: Flex__<"h5">;
 };
 
 export interface DefaultHomepageProps {}
@@ -126,7 +125,20 @@ function PlasmicHomepage__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head></Head>
+      <Head>
+        <meta name="twitter:card" content="summary" />
+        <title key="title">{PlasmicHomepage.pageMetadata.title}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={PlasmicHomepage.pageMetadata.title}
+        />
+        <meta
+          key="twitter:title"
+          name="twitter:title"
+          content={PlasmicHomepage.pageMetadata.title}
+        />
+      </Head>
 
       <style>{`
         body {
@@ -188,23 +200,30 @@ function PlasmicHomepage__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__dnOxr)}
             >
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__ofi69)}
-                displayHeight={"60px"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/website_starter/images/image.png",
-                  fullWidth: 484,
-                  fullHeight: 167,
-                  aspectRatio: undefined
-                }}
-              />
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__gFy9)}
+              >
+                <Button
+                  className={classNames("__wab_instance", sty.button__dJ7YQ)}
+                  color={"white"}
+                >
+                  {"TWITTER"}
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__xKjNk)}
+                  color={"white"}
+                >
+                  {"TELEGRAM"}
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__kGyH)}
+                  color={"white"}
+                >
+                  {"DEXSCREENER"}
+                </Button>
+              </Stack__>
             </Stack__>
           </div>
           <section className={classNames(projectcss.all, sty.section__kHeVv)}>
@@ -222,7 +241,11 @@ function PlasmicHomepage__RenderFunc(props: {
           </section>
           <section className={classNames(projectcss.all, sty.section__a8Kgj)}>
             <div className={classNames(projectcss.all, sty.freeBox__cB0P)}>
-              <div className={classNames(projectcss.all, sty.columns__h0Koz)}>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.columns__h0Koz)}
+              >
                 <div className={classNames(projectcss.all, sty.column__s4Flq)}>
                   <PlasmicImg__
                     alt={""}
@@ -235,40 +258,51 @@ function PlasmicHomepage__RenderFunc(props: {
                     displayWidth={"auto"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/website_starter/images/iq50Catpng.png",
-                      fullWidth: 500,
-                      fullHeight: 500,
+                      src: "/plasmic/iq_50_cat/images/cat34Minpng.png",
+                      fullWidth: 1024,
+                      fullHeight: 1024,
                       aspectRatio: undefined
                     }}
                   />
-                </div>
-                <div className={classNames(projectcss.all, sty.column__rVv7S)}>
+
                   <h1
                     className={classNames(
                       projectcss.all,
                       projectcss.h1,
                       projectcss.__wab_text,
-                      sty.h1__qt6C
+                      sty.h1___6ZJz
                     )}
                   >
                     {"About"}
                   </h1>
-                  <h5
-                    data-plasmic-name={"h5"}
-                    data-plasmic-override={overrides.h5}
+                  <h4
                     className={classNames(
                       projectcss.all,
-                      projectcss.h5,
+                      projectcss.h4,
                       projectcss.__wab_text,
-                      sty.h5
+                      sty.h4___2AyL4
                     )}
                   >
                     {
-                      "In the bustling world of cryptocurrency, there lived a memecoin like no other\u2014IQ50CAT. Unlike its sophisticated counterparts, IQ50CAT was a lovable but incredibly dim-witted cat with an IQ of 50. Despite its lack of intelligence, IQ50CAT had a heart of gold and a spirit as bright as the moon. (Token Description)\n\nOne day, IQ50CAT stumbled upon a group of seasoned investors who were discussing the latest trends in the crypto market. Curious but clueless, IQ50CAT decided to join the conversation, hoping to learn a thing or two about the world it inhabited.\n\nTo everyone's surprise, IQ50CAT's innocent questions and bumbling nature brought a sense of joy and levity to the group. Its antics and charming personality quickly won over the hearts of the investors, who dubbed it the \"mascot\" of their community.\n\nAs time went on, IQ50CAT became a symbol of resilience and positivity in the volatile world of cryptocurrency. Despite its low IQ, IQ50CAT's simple wisdom and pure-hearted nature inspired others to embrace the joy of the journey, rather than focusing solely on the destination.\n\nAnd so, IQ50CAT became more than just a memecoin\u2014it became a beacon of hope, reminding everyone that sometimes, in the complex world of finance, a little simplicity and a lot of heart are all you need to succeed."
+                      "In the bustling world of cryptocurrency, there lived a memecoin like no other\u2014IQ50CAT. Unlike its sophisticated counterparts, IQ50CAT was a lovable but incredibly dim-witted cat with an IQ of 50. Despite its lack of intelligence, IQ50CAT had a heart of gold and a spirit as bright as the moon. (Token Description)"
                     }
-                  </h5>
+                  </h4>
                 </div>
-              </div>
+                <div className={classNames(projectcss.all, sty.column__rVv7S)}>
+                  <h4
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4__zEi3F
+                    )}
+                  >
+                    {
+                      "One day, IQ50CAT stumbled upon a group of seasoned investors who were discussing the latest trends in the crypto market. Curious but clueless, IQ50CAT decided to join the conversation, hoping to learn a thing or two about the world it inhabited.\n\nTo everyone's surprise, IQ50CAT's innocent questions and bumbling nature brought a sense of joy and levity to the group. Its antics and charming personality quickly won over the hearts of the investors, who dubbed it the \"mascot\" of their community.\n\nAs time went on, IQ50CAT became a symbol of resilience and positivity in the volatile world of cryptocurrency. Despite its low IQ, IQ50CAT's simple wisdom and pure-hearted nature inspired others to embrace the joy of the journey, rather than focusing solely on the destination.\n\nAnd so, IQ50CAT became more than just a memecoin\u2014it became a beacon of hope, reminding everyone that sometimes, in the complex world of finance, a little simplicity and a lot of heart are all you need to succeed."
+                    }
+                  </h4>
+                </div>
+              </Stack__>
             </div>
           </section>
           <section className={classNames(projectcss.all, sty.section__gSwNh)}>
@@ -621,15 +655,13 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h5"],
-  h5: ["h5"]
+  root: ["root"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  h5: "h5";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -692,7 +724,6 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    h5: makeNodeComponent("h5"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
@@ -700,7 +731,7 @@ export const PlasmicHomepage = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
+      title: "IQ50Cat",
       description: "",
       ogImageSrc: "",
       canonical: ""

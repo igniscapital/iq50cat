@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -24,7 +24,7 @@
     {
       "projectId": "5znmqm84gAkSmZErs8zBFs",
       "projectApiToken": "3ZgfT3faXNHJwrkIWmxBSMG0fF6Ba7N7DZ1ouepZmzRzT3CrEsuNDTFUURlkkZuAqxg7LXIr6LWha1pJBfA",
-      "projectName": "Website starter",
+      "projectName": "iq50cat",
       "version": "latest",
       "cssFilePath": "plasmic/website_starter/plasmic.module.css",
       "components": [
@@ -104,6 +104,11 @@
           "id": "vxgi4dG5VxJh",
           "name": "catiq502.png",
           "filePath": "../public/plasmic/website_starter/images/catiq502Png.png"
+        },
+        {
+          "id": "PC4pK-UCYX3s",
+          "name": "cat34-min.png",
+          "filePath": "../public/plasmic/iq_50_cat/images/cat34Minpng.png"
         }
       ],
       "indirect": false,
