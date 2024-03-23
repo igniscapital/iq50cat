@@ -241,7 +241,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .section__kHeVv {
-    background: url("/plasmic/website_starter/images/iq50CatHero1Webp.webp") top 0% left 0px / cover repeat-y;
+    background: url("/plasmic/iq_50_cat/images/iq50CatHeroMobilewebp.webp") top 50% left 50% / cover repeat;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
