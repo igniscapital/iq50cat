@@ -1,0 +1,145 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "5znmqm84gAkSmZErs8zBFs",
+      "projectApiToken": "3ZgfT3faXNHJwrkIWmxBSMG0fF6Ba7N7DZ1ouepZmzRzT3CrEsuNDTFUURlkkZuAqxg7LXIr6LWha1pJBfA",
+      "projectName": "Website starter",
+      "version": "latest",
+      "cssFilePath": "plasmic/website_starter/plasmic.module.css",
+      "components": [
+        {
+          "id": "pgXsmv_vw8hV",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "5znmqm84gAkSmZErs8zBFs",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        },
+        {
+          "id": "dkpkCuny-teH",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "5znmqm84gAkSmZErs8zBFs",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        }
+      ],
+      "icons": [
+        {
+          "id": "inzf9r7ENUEh",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/website_starter/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "B7DPSsDz0Gxx",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/website_starter/icons/PlasmicIcon__Icon.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "Mb_QDnBNQPlm",
+          "name": "iq50cat-hero-min.png",
+          "filePath": "../public/plasmic/website_starter/images/iq50CatHeroMinpng.png"
+        },
+        {
+          "id": "TzaFJ8scmK7U",
+          "name": "DALL·E 2024-03-23 16.07.02 - Design a vibrant comic-style hero banner featuring a cat character with an 'Einstein sticking his tongue out' expression, symbolizing a mix of intelli.webp",
+          "filePath": "../public/plasmic/website_starter/images/dalle20240323160702DesignAVibrantComicStyleHeroBannerFeaturingACatCharacterWithAnEinsteinStickingHisTongueOutExpressionSymbolizingAMixOfIntelliwebp.webp"
+        },
+        {
+          "id": "t8k_SCg0Tcnx",
+          "name": "iq50cat-hero1.webp",
+          "filePath": "../public/plasmic/website_starter/images/iq50CatHero1Webp.webp"
+        },
+        {
+          "id": "YJew_1tYmgSe",
+          "name": "iq50cat.png",
+          "filePath": "../public/plasmic/website_starter/images/iq50Catpng.png"
+        },
+        {
+          "id": "ysa7gmxUstdo",
+          "name": "image",
+          "filePath": "../public/plasmic/website_starter/images/image.png"
+        },
+        {
+          "id": "mewB2XgQzkap",
+          "name": "bg2.webp",
+          "filePath": "../public/plasmic/website_starter/images/bg2Webp.webp"
+        },
+        {
+          "id": "vxgi4dG5VxJh",
+          "name": "catiq502.png",
+          "filePath": "../public/plasmic/website_starter/images/catiq502Png.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "3AKrdQmaR7-y",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "4H36cXzEkoQ7",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "-t8iY2mcI0YT",
+        "name": "Screen",
+        "projectId": "5znmqm84gAkSmZErs8zBFs",
+        "contextFilePath": "plasmic/website_starter/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.327",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.327/dist/plasmic.schema.json"
+}
