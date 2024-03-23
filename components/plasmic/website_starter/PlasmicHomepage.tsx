@@ -59,7 +59,9 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { PlasmicHead } from "@plasmicapp/react-web";
 import Button from "../../Button"; // plasmic-import: dkpkCuny-teH/component
+import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 
 import { useScreenVariants as useScreenVariantst8IY2McI0Yt } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -t8iY2mcI0YT/globalVariant
 
@@ -84,6 +86,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
+  pageMetadataOverride?: Flex__<typeof PlasmicHead>;
 };
 
 export interface DefaultHomepageProps {}
@@ -161,6 +164,17 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
+          <PlasmicHead
+            data-plasmic-name={"pageMetadataOverride"}
+            data-plasmic-override={overrides.pageMetadataOverride}
+            className={classNames("__wab_instance", sty.pageMetadataOverride)}
+            description={
+              "In the bustling world of cryptocurrency, there lived a memecoin like no other\u2014IQ50CAT. Unlike its sophisticated counterparts, IQ50CAT was a lovable but incredibly dim-witted cat with an IQ of 50. Despite its lack of intelligence, IQ50CAT had a heart of gold and a spirit as bright as the moon."
+            }
+            image={"/plasmic/website_starter/images/iq50Catpng.png"}
+            title={"IQ50CAT"}
+          />
+
           <div className={classNames(projectcss.all, sty.freeBox__yhWrf)}>
             <Stack__
               as={"div"}
@@ -208,12 +222,14 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Button
                   className={classNames("__wab_instance", sty.button__dJ7YQ)}
                   color={"white"}
+                  link={"https://twitter.com/IQ50CATSol"}
                 >
                   {"TWITTER"}
                 </Button>
                 <Button
                   className={classNames("__wab_instance", sty.button__xKjNk)}
                   color={"white"}
+                  link={"https://t.me/iq50catPORTAL"}
                 >
                   {"TELEGRAM"}
                 </Button>
@@ -240,67 +256,90 @@ function PlasmicHomepage__RenderFunc(props: {
             </div>
           </section>
           <section className={classNames(projectcss.all, sty.section__a8Kgj)}>
-            <div className={classNames(projectcss.all, sty.freeBox__cB0P)}>
+            <div className={classNames(projectcss.all, sty.freeBox__oyDy5)}>
               <Stack__
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.columns__h0Koz)}
+                className={classNames(projectcss.all, sty.columns__fzbI0)}
               >
-                <div className={classNames(projectcss.all, sty.column__s4Flq)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__w4QO8)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/iq_50_cat/images/cat34Minpng.png",
-                      fullWidth: 1024,
-                      fullHeight: 1024,
-                      aspectRatio: undefined
-                    }}
-                  />
+                <div className={classNames(projectcss.all, sty.column__u9MmB)}>
+                  <Reveal
+                    className={classNames("__wab_instance", sty.reveal__cY5Hk)}
+                    direction={"left"}
+                    triggerOnce={true}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__oXkmA)}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__onkte)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/iq_50_cat/images/cat34Minpng.png",
+                          fullWidth: 1024,
+                          fullHeight: 1024,
+                          aspectRatio: undefined
+                        }}
+                      />
 
-                  <h1
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h1,
-                      projectcss.__wab_text,
-                      sty.h1___6ZJz
-                    )}
-                  >
-                    {"About"}
-                  </h1>
-                  <h4
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h4,
-                      projectcss.__wab_text,
-                      sty.h4___2AyL4
-                    )}
-                  >
-                    {
-                      "In the bustling world of cryptocurrency, there lived a memecoin like no other\u2014IQ50CAT. Unlike its sophisticated counterparts, IQ50CAT was a lovable but incredibly dim-witted cat with an IQ of 50. Despite its lack of intelligence, IQ50CAT had a heart of gold and a spirit as bright as the moon. (Token Description)"
-                    }
-                  </h4>
+                      <h1
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h1,
+                          projectcss.__wab_text,
+                          sty.h1__wyQtp
+                        )}
+                      >
+                        {"About"}
+                      </h1>
+                      <h4
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h4,
+                          projectcss.__wab_text,
+                          sty.h4___5BBof
+                        )}
+                      >
+                        {
+                          "In the bustling world of cryptocurrency, there lived a memecoin like no other\u2014IQ50CAT. Unlike its sophisticated counterparts, IQ50CAT was a lovable but incredibly dim-witted cat with an IQ of 50. Despite its lack of intelligence, IQ50CAT had a heart of gold and a spirit as bright as the moon."
+                        }
+                      </h4>
+                    </div>
+                  </Reveal>
                 </div>
-                <div className={classNames(projectcss.all, sty.column__rVv7S)}>
-                  <h4
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h4,
-                      projectcss.__wab_text,
-                      sty.h4__zEi3F
-                    )}
+                <div className={classNames(projectcss.all, sty.column__kOmiN)}>
+                  <Reveal
+                    className={classNames("__wab_instance", sty.reveal__wHlhL)}
+                    direction={"right"}
+                    triggerOnce={true}
                   >
-                    {
-                      "One day, IQ50CAT stumbled upon a group of seasoned investors who were discussing the latest trends in the crypto market. Curious but clueless, IQ50CAT decided to join the conversation, hoping to learn a thing or two about the world it inhabited.\n\nTo everyone's surprise, IQ50CAT's innocent questions and bumbling nature brought a sense of joy and levity to the group. Its antics and charming personality quickly won over the hearts of the investors, who dubbed it the \"mascot\" of their community.\n\nAs time went on, IQ50CAT became a symbol of resilience and positivity in the volatile world of cryptocurrency. Despite its low IQ, IQ50CAT's simple wisdom and pure-hearted nature inspired others to embrace the joy of the journey, rather than focusing solely on the destination.\n\nAnd so, IQ50CAT became more than just a memecoin\u2014it became a beacon of hope, reminding everyone that sometimes, in the complex world of finance, a little simplicity and a lot of heart are all you need to succeed."
-                    }
-                  </h4>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___64Myc
+                      )}
+                    >
+                      <h4
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h4,
+                          projectcss.__wab_text,
+                          sty.h4__r76Nn
+                        )}
+                      >
+                        {
+                          "One day, IQ50CAT stumbled upon a group of seasoned investors who were discussing the latest trends in the crypto market. Curious but clueless, IQ50CAT decided to join the conversation, hoping to learn a thing or two about the world it inhabited.\n\nTo everyone's surprise, IQ50CAT's innocent questions and bumbling nature brought a sense of joy and levity to the group. Its antics and charming personality quickly won over the hearts of the investors, who dubbed it the \"mascot\" of their community.\n\nAs time went on, IQ50CAT became a symbol of resilience and positivity in the volatile world of cryptocurrency. Despite its low IQ, IQ50CAT's simple wisdom and pure-hearted nature inspired others to embrace the joy of the journey, rather than focusing solely on the destination.\n\nAnd so, IQ50CAT became more than just a memecoin\u2014it became a beacon of hope, reminding everyone that sometimes, in the complex world of finance, a little simplicity and a lot of heart are all you need to succeed."
+                        }
+                      </h4>
+                    </div>
+                  </Reveal>
                 </div>
               </Stack__>
             </div>
@@ -319,195 +358,238 @@ function PlasmicHomepage__RenderFunc(props: {
               </h1>
               <div className={classNames(projectcss.all, sty.columns__spXwN)}>
                 <div className={classNames(projectcss.all, sty.column__plEvT)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__ntGMu)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/website_starter/images/catiq502Png.png",
-                      fullWidth: 793,
-                      fullHeight: 973,
-                      aspectRatio: undefined
-                    }}
-                  />
+                  <Reveal
+                    className={classNames("__wab_instance", sty.reveal__nLxvd)}
+                    direction={"left"}
+                    triggerOnce={true}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__ntGMu)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/website_starter/images/catiq502Png.png",
+                        fullWidth: 793,
+                        fullHeight: 973,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </Reveal>
                 </div>
                 <div className={classNames(projectcss.all, sty.column__akDw)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__tfM22)}
+                  <Reveal
+                    cascade={true}
+                    className={classNames("__wab_instance", sty.reveal___7P5O7)}
+                    direction={"right"}
+                    triggerOnce={true}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__xxDoZ)}
+                      className={classNames(projectcss.all, sty.freeBox__frCJs)}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__wwB22
+                          sty.freeBox__tfM22
                         )}
                       >
-                        <h6
+                        <div
                           className={classNames(
                             projectcss.all,
-                            projectcss.h6,
-                            projectcss.__wab_text,
-                            sty.h6__vUnbV
+                            sty.freeBox__xxDoZ
                           )}
                         >
-                          {"Name"}
-                        </h6>
-                        <h3
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__wwB22
+                            )}
+                          >
+                            <h6
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h6,
+                                projectcss.__wab_text,
+                                sty.h6__vUnbV
+                              )}
+                            >
+                              {"Name"}
+                            </h6>
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3__utexh
+                              )}
+                            >
+                              {"IQ50CAT"}
+                            </h3>
+                          </div>
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
-                            projectcss.h3,
-                            projectcss.__wab_text,
-                            sty.h3__utexh
+                            sty.freeBox__tg84O
                           )}
                         >
-                          {"IQ50CAT"}
-                        </h3>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox___9NQdR
+                            )}
+                          >
+                            <h6
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h6,
+                                projectcss.__wab_text,
+                                sty.h6___4HBh5
+                              )}
+                            >
+                              {"Chain"}
+                            </h6>
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3___9HmB
+                              )}
+                            >
+                              {"Solana"}
+                            </h3>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__tg84O)}
-                    >
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox___9NQdR
+                          sty.freeBox__kc0Se
                         )}
                       >
-                        <h6
+                        <div
                           className={classNames(
                             projectcss.all,
-                            projectcss.h6,
-                            projectcss.__wab_text,
-                            sty.h6___4HBh5
+                            sty.freeBox__vdnL5
                           )}
                         >
-                          {"Chain"}
-                        </h6>
-                        <h3
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__ytYp
+                            )}
+                          >
+                            <h6
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h6,
+                                projectcss.__wab_text,
+                                sty.h6___1Li7
+                              )}
+                            >
+                              {"Total Supply"}
+                            </h6>
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3__pelan
+                              )}
+                            >
+                              {"1.000.000.000"}
+                            </h3>
+                          </div>
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
-                            projectcss.h3,
-                            projectcss.__wab_text,
-                            sty.h3___9HmB
+                            sty.freeBox__ic2A
                           )}
                         >
-                          {"Solana"}
-                        </h3>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__s4KJl
+                            )}
+                          >
+                            <h6
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h6,
+                                projectcss.__wab_text,
+                                sty.h6__cA6S5
+                              )}
+                            >
+                              {"CA"}
+                            </h6>
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3___6VOy3
+                              )}
+                            >
+                              {
+                                "7yZp2XBhWdhig\ncEUucB7pnei5Hu\nQ9LSBrjanAG2d\nQvnR"
+                              }
+                            </h3>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__kc0Se)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__vdnL5)}
-                    >
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__ytYp
+                          sty.freeBox__yczNr
                         )}
                       >
-                        <h6
+                        <div
                           className={classNames(
                             projectcss.all,
-                            projectcss.h6,
-                            projectcss.__wab_text,
-                            sty.h6___1Li7
+                            sty.freeBox__f4EjC
                           )}
                         >
-                          {"Total Supply"}
-                        </h6>
-                        <h3
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h3,
-                            projectcss.__wab_text,
-                            sty.h3__pelan
-                          )}
-                        >
-                          {"1.000.000.000"}
-                        </h3>
+                          <h3
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.h3,
+                              projectcss.__wab_text,
+                              sty.h3__fHgeM
+                            )}
+                          >
+                            {"MINT REVOKED"}
+                          </h3>
+                          <h3
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.h3,
+                              projectcss.__wab_text,
+                              sty.h3__yktQv
+                            )}
+                          >
+                            {"LPBURN"}
+                          </h3>
+                          <h3
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.h3,
+                              projectcss.__wab_text,
+                              sty.h3__pu0Q
+                            )}
+                          >
+                            {"0% TAX"}
+                          </h3>
+                        </div>
                       </div>
                     </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__ic2A)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__s4KJl
-                        )}
-                      >
-                        <h6
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h6,
-                            projectcss.__wab_text,
-                            sty.h6__cA6S5
-                          )}
-                        >
-                          {"CA"}
-                        </h6>
-                        <h3
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h3,
-                            projectcss.__wab_text,
-                            sty.h3___6VOy3
-                          )}
-                        >
-                          {"7yZp2XBhWdhig\ncEUucB7pnei5Hu\nQ9LSBrjanAG2d\nQvnR"}
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__yczNr)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__f4EjC)}
-                    >
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__fHgeM
-                        )}
-                      >
-                        {"MINT REVOKED"}
-                      </h3>
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__yktQv
-                        )}
-                      >
-                        {"LPBURN"}
-                      </h3>
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__pu0Q
-                        )}
-                      >
-                        {"0% TAX"}
-                      </h3>
-                    </div>
-                  </div>
+                  </Reveal>
                 </div>
               </div>
             </div>
@@ -631,12 +713,14 @@ function PlasmicHomepage__RenderFunc(props: {
               <Button
                 className={classNames("__wab_instance", sty.button__klXoP)}
                 color={"white"}
+                link={"https://twitter.com/IQ50CATSol"}
               >
                 {"TWITTER"}
               </Button>
               <Button
                 className={classNames("__wab_instance", sty.button___4Qmn8)}
                 color={"white"}
+                link={"https://t.me/iq50catPORTAL"}
               >
                 {"TELEGRAM"}
               </Button>
@@ -655,13 +739,15 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "pageMetadataOverride"],
+  pageMetadataOverride: ["pageMetadataOverride"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  pageMetadataOverride: typeof PlasmicHead;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -724,6 +810,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
