@@ -87,6 +87,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   pageMetadataOverride?: Flex__<typeof PlasmicHead>;
+  h5?: Flex__<"h5">;
 };
 
 export interface DefaultHomepageProps {}
@@ -251,7 +252,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.text__sd5Er
                 )}
               >
-                {"7yZp2XBhWdhigcEUucB7pnei5HuQ9LSBrjanAG2dQvnR"}
+                {hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "7yZp2XBhWdhigcEUucB7pnei5\nHuQ9LSBrjanAG2dQvnR"
+                  : "7yZp2XBhWdhigcEUucB7pnei5HuQ9LSBrjanAG2dQvnR"}
               </div>
             </div>
           </section>
@@ -308,7 +311,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         )}
                       >
                         {
-                          "In the bustling world of cryptocurrency, there lived a memecoin like no other\u2014IQ50CAT. Unlike its sophisticated counterparts, IQ50CAT was a lovable but incredibly dim-witted cat with an IQ of 50. Despite its lack of intelligence, IQ50CAT had a heart of gold and a spirit as bright as the moon."
+                          "Welcome to the IQ50CAT , where mediocrity reigns supreme and intelligence is a distant memory. With an IQ that barely surpasses a houseplant's, IQ50CAT isn't your typical brainy crypto \u2013 not by a long shot."
                         }
                       </h4>
                     </div>
@@ -335,7 +338,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         )}
                       >
                         {
-                          "One day, IQ50CAT stumbled upon a group of seasoned investors who were discussing the latest trends in the crypto market. Curious but clueless, IQ50CAT decided to join the conversation, hoping to learn a thing or two about the world it inhabited.\n\nTo everyone's surprise, IQ50CAT's innocent questions and bumbling nature brought a sense of joy and levity to the group. Its antics and charming personality quickly won over the hearts of the investors, who dubbed it the \"mascot\" of their community.\n\nAs time went on, IQ50CAT became a symbol of resilience and positivity in the volatile world of cryptocurrency. Despite its low IQ, IQ50CAT's simple wisdom and pure-hearted nature inspired others to embrace the joy of the journey, rather than focusing solely on the destination.\n\nAnd so, IQ50CAT became more than just a memecoin\u2014it became a beacon of hope, reminding everyone that sometimes, in the complex world of finance, a little simplicity and a lot of heart are all you need to succeed."
+                          "In a hilariously ironic twist, IQ50CAT stumbled upon a gathering of seasoned investors, deeply immersed in crypto discussions. With an IQ that could rival a drowsy sloth's, IQ50CAT boldly joined the fray, fueled by sheer curiosity and a blissful ignorance of all things crypto.\n\nTo everyone's amusement, IQ50CAT's innocent questions and clueless demeanor injected a refreshing dose of humor into the room. Despite its knack for making questionable decisions like buying high and hodling tight (maybe a bit too tight), IQ50CAT's endearing foolishness and lovably dim-witted charm quickly earned it the title of the \"mascot\" of the community.\n\nAs time went on, IQ50CAT's unique brand of wisdom embracing the mantra of \"buy high, hodl tight, and hope for the best,\nbecame a quirky cultural phenomenon in the unpredictable world of cryptocurrency. Despite being hailed as the epitome of folly in the crypto realm, IQ50CAT's simple yet profound outlook on life served as a quirky reminder that sometimes, amidst all the chaos, a little foolishness and a lot of heart are just what you need to thrive."
                         }
                       </h4>
                     </div>
@@ -586,6 +589,44 @@ function PlasmicHomepage__RenderFunc(props: {
                           >
                             {"0% TAX"}
                           </h3>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__c4Ndp
+                            )}
+                          >
+                            <h5
+                              data-plasmic-name={"h5"}
+                              data-plasmic-override={overrides.h5}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h5,
+                                projectcss.__wab_text,
+                                sty.h5
+                              )}
+                            >
+                              {"Token Alocation"}
+                            </h5>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox___2CAlC
+                            )}
+                          >
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3__iq2ZF
+                              )}
+                            >
+                              {
+                                "Marketing Budget 5%\nTeam allocation 5%\nFuture Development 5%"
+                              }
+                            </h3>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -739,8 +780,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "pageMetadataOverride"],
-  pageMetadataOverride: ["pageMetadataOverride"]
+  root: ["root", "pageMetadataOverride", "h5"],
+  pageMetadataOverride: ["pageMetadataOverride"],
+  h5: ["h5"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -748,6 +790,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   pageMetadataOverride: typeof PlasmicHead;
+  h5: "h5";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -811,6 +854,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
+    h5: makeNodeComponent("h5"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

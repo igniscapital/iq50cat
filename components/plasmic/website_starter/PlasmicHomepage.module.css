@@ -866,6 +866,46 @@
   padding-bottom: 24px;
   min-width: 0;
 }
+.freeBox__c4Ndp {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.h5 {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: #ffffff;
+  text-align: left;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  min-width: 0;
+}
+.freeBox___2CAlC {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.h3__iq2ZF {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: #ffffff;
+  text-align: left;
+  min-width: 0;
+}
 .section__eCbS {
   display: grid;
   position: relative;
