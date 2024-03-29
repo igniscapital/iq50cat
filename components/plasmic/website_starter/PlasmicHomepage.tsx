@@ -669,7 +669,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames("__wab_instance", sty.iframe__m1Bfl)}
                     preview={true}
                     src={
-                      "https://dexscreener.com/solana/hqcw8xa3hrwcm8l9sf6qxcu3vticvs4iiybtmea2zogr"
+                      "https://dexscreener.com/solana/HqCw8XA3HRwCM8L9Sf6QXCu3vTiCvS4iiyBTmea2ZoGr?embed=1&theme=dark"
                     }
                   />
                 </div>
