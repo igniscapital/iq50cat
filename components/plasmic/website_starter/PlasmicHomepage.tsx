@@ -650,7 +650,11 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 {"Buy IQ50CAT"}
               </h1>
-              <div className={classNames(projectcss.all, sty.columns__jwxbU)}>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.columns__jwxbU)}
+              >
                 <div className={classNames(projectcss.all, sty.column__riMVu)}>
                   <Iframe
                     className={classNames("__wab_instance", sty.iframe__iS5R)}
@@ -669,7 +673,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   />
                 </div>
-              </div>
+              </Stack__>
             </div>
           </section>
           <section className={classNames(projectcss.all, sty.section__eCbS)}>
