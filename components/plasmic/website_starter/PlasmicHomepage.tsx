@@ -62,6 +62,7 @@ import {
 import { PlasmicHead } from "@plasmicapp/react-web";
 import Button from "../../Button"; // plasmic-import: dkpkCuny-teH/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
+import { Iframe } from "@plasmicpkgs/plasmic-basic-components";
 
 import { useScreenVariants as useScreenVariantst8IY2McI0Yt } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -t8iY2mcI0YT/globalVariant
 
@@ -633,6 +634,40 @@ function PlasmicHomepage__RenderFunc(props: {
                       </div>
                     </div>
                   </Reveal>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className={classNames(projectcss.all, sty.section__woCEq)}>
+            <div className={classNames(projectcss.all, sty.freeBox__b7G4S)}>
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1___2Q6Cr
+                )}
+              >
+                {"Buy IQ50CAT"}
+              </h1>
+              <div className={classNames(projectcss.all, sty.columns__jwxbU)}>
+                <div className={classNames(projectcss.all, sty.column__riMVu)}>
+                  <Iframe
+                    className={classNames("__wab_instance", sty.iframe__iS5R)}
+                    preview={true}
+                    src={
+                      "https://jup.ag/swap/SOL-IQ50CAT_7yZp2XBhWdhigcEUucB7pnei5HuQ9LSBrjanAG2dQvnR"
+                    }
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.column__hApGn)}>
+                  <Iframe
+                    className={classNames("__wab_instance", sty.iframe__m1Bfl)}
+                    preview={true}
+                    src={
+                      "https://dexscreener.com/solana/7tytfzmcp2s1nis5yz7xnmwwpzgjtrwhrf2ioplfexmp"
+                    }
+                  />
                 </div>
               </div>
             </div>
